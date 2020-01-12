@@ -43,7 +43,7 @@ public class Bezirk {
         this.kreise = kreise;
         for (Kreis kreis : kreise) {
             kreis.setBezirk(this);
-            kreis.setUrl(UrlUtil.safeUrl(getHttpAndDomain() , kreis.getUrl()));
+            this.url = UrlUtil.safeUrl(getHttpAndDomain(), kreis.getUrl());
         }
     }
 
